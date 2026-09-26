@@ -12,7 +12,7 @@ try:
     print(f"Space '{SPACE_REPO}' already exists. Using it.")
 except RepositoryNotFoundError:
     print(f"Space '{SPACE_REPO}' not found. Creating new Space...")
-    create_repo(repo_id=SPACE_REPO, repo_type="space", space_sdk="streamlit", private=False)
+    create_repo(repo_id=SPACE_REPO, repo_type="space", space_sdk="static", private=False)
     print(f"Space '{SPACE_REPO}' created.")
 
 # Step 2: Push the deployment files (app.py, requirements.txt)
